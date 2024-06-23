@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="headlines"
+            type="com.durarweb.newsapp.model.SourceHeadLines" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:shadowColor="@color/light_grey"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="6dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="6dp"
+            >
+
+            <ImageView
+                android:id="@+id/newsImage"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/newsTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{headlines.name}"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textAlignment="viewStart"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:padding="2dp"
+                app:layout_constraintEnd_toEndOf="@+id/newsImage"
+                app:layout_constraintStart_toStartOf="@+id/newsImage"
+                app:layout_constraintTop_toBottomOf="@+id/newsImage"
+                tools:text="Title" />
+
+            <TextView
+                android:id="@+id/newsAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@{headlines.description}"
+                android:maxLines="2"
+                android:padding="2dp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="18sp"
+                android:autoSizeStepGranularity="2sp"
+                android:fontFamily="sans-serif-dark"
+                android:lineSpacingExtra="4dp"
+                android:ellipsize="end"
+                android:fadingEdge="vertical"
+                android:textColor="@color/colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf="@+id/newsTitle"
+                app:layout_constraintStart_toStartOf="@+id/newsTitle"
+                app:layout_constraintTop_toBottomOf="@+id/newsTitle"
+                tools:text="By Author Name" />
+
+            <TextView
+                android:id="@+id/newsPublishedAt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="2dp"
+                android:fontFamily="sans-serif-dark"
+                android:textColor="@color/colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf="@+id/newsAuthor"
+                app:layout_constraintStart_toStartOf="@+id/newsAuthor"
+                app:layout_constraintTop_toBottomOf="@+id/newsAuthor"
+                tools:text="@{@string/country + headlines.country}" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

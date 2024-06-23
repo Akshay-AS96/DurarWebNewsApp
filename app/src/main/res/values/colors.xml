@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/light_brown</color>
+    <color name="colorSecondary">@color/cream</color>
+    <color name="colorPrimaryDark">@color/brown</color>
+    <color name="black">#FF000000</color>
+    <color name="brown">#942919</color>
+    <color name="light_brown">#685545</color>
+    <color name="cream">#f1d3bb</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_grey">#FFD3D3D3</color>
+    <color name="violet">#37048f</color>
+    <color name="dark_violet">#310051</color>
+    <color name="light_blue">#7e76e3</color>
+
+</resources>

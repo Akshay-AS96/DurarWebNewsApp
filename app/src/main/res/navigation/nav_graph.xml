@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HeadlineListFragment">
+
+    <fragment
+        android:id="@+id/HeadlineListFragment"
+        android:name="com.durarweb.newsapp.ui.fragment.HeadlinesListFragment"
+        android:label="Top Headlines"
+        tools:layout="@layout/fragment_headlines">
+
+       <action
+            android:id="@+id/action_HeadlineListFragment_to_UserFragment1"
+            app:destination="@id/HeadlineFragment">
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/HeadlineFragment"
+        android:name="com.durarweb.newsapp.ui.fragment.HeadlineFragment"
+        android:label="News"
+        tools:layout="@layout/fragment_news">
+
+        <action
+            android:id="@+id/action_headlineFragment_to_HeadlineListFragment"
+            app:destination="@id/HeadlineListFragment" />
+
+    </fragment>
+</navigation>

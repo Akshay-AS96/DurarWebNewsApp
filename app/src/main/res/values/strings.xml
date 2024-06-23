@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">News App</string>
+    <string name="news_app">News App</string>
+    <string name="label_user_list_fragment">Dashboard</string>
+    <string name="user_image">User Image</string>
+    <string name="not_available">not available</string>
+    <string name="back_press_text">Double Tap to Exit!</string>
+    <string name="no_internet_connection">No internet connection.\n
+        Please check your network settings</string>
+    <string name="published_at">Published at: </string>
+    <string name="country">Country: </string>
+    <string name="news">News</string>
+    <string name="language">Language:</string>
+    <string name="author">Author:</string>
+    <string name="url_one">https://img.jagranjosh.com/images/2024/May/552024/today-school-assembly-headlines-may-6-2024.webp</string>
+    <string name="url_two">https://www.financialexpress.com/wp-content/uploads/2024/02/Breaking-News-10.jpg?w=1024</string>
+    <string name="url_three">https://mediaengagement.org/wp-content/uploads/2015/10/iStock_000012343946_Large-edit-300x200-2.jpg</string>
+    <string name="url_four">https://media.istockphoto.com/id/1455658894/photo/system-hacked-warning-alert-on-notebook-cyber-attack-on-computer-network-virus-spyware.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=0Ta6ehF-2ixivMR38kxMA10HucXlcYIGwh-q9fq8qWg=</string>
+
+</resources>
